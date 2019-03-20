@@ -84,6 +84,20 @@ body {
   outline: none;
 }
 
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
 /* Backgorund Images */
 
 .slide:first-child {
